@@ -2,7 +2,7 @@
   "name": "app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://andrescevallos1990.github.io/KarenIngridPergPorfolio",
+  "homepage": "https://kiperg.github.io/KPergPorfolio",
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@testing-library/dom": "^10.4.1",

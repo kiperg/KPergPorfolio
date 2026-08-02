@@ -198,7 +198,7 @@
 }
 .textosComponent__info {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .textosComponent__info article {
   display: flex;
@@ -220,17 +220,13 @@
 .textosComponent__info article div:nth-child(1):hover {
   transform: scale(1.15);
 }
-.textosComponent__info article div:nth-child(1):hover svg,
-.textosComponent__info article div:nth-child(1):hover a {
-  color: #48ff00;
-} /* EMAIL */
+
+/* EMAIL */
 .textosComponent__info article div:nth-child(2):hover {
   transform: scale(1.15);
 }
-.textosComponent__info article div:nth-child(2):hover svg,
-.textosComponent__info article div:nth-child(2):hover a {
-  color: #ff0000;
-} /*============================= TARJETAS GALERIA ==============================*/
+
+ /*============================= TARJETAS GALERIA ==============================*/
 .gallery-item {
   position: relative;
   overflow: hidden;
@@ -288,9 +284,7 @@
 
 .gallery-title {
   font-size: 2rem;
-  font-weight: 100;
   color: #1d1d1d;
   text-align: center;
   margin-top: 10px;
-  font-family: "Plus Jakarta Sans", sans-serif;
 }

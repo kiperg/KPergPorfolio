@@ -56,10 +56,10 @@ const MainRenders = () => {
         {
             nombre: "CONFORME A OBRA",
             imagenes: [
+                "https://res.cloudinary.com/drfdelucd/image/upload/v1785684854/FACHADA_qrvh5n.png",
                 "https://res.cloudinary.com/drfdelucd/image/upload/v1785684854/PLANTA_dg6orz.png",
                 "https://res.cloudinary.com/drfdelucd/image/upload/v1785684854/PB_roqtkr.png",
-                "https://res.cloudinary.com/drfdelucd/image/upload/v1785684854/CORTE_it7jfc.png",
-                "https://res.cloudinary.com/drfdelucd/image/upload/v1785684854/FACHADA_qrvh5n.png",
+                "https://res.cloudinary.com/drfdelucd/image/upload/v1785684854/CORTE_it7jfc.png"
             ]
         }, {
             nombre: "CASA LC",
@@ -142,6 +142,7 @@ const MainRenders = () => {
                                 whileTap={{ scale: .98 }}
                                 onClick={() => setIndexFolder(index)}
                             >
+                                
 
                                 <img
                                     src={item.imagenes[0]}
@@ -172,9 +173,9 @@ const MainRenders = () => {
                         transition={{ duration: .35 }}
                     >
 
-                        <h1 className="gallery-title">
+                        <p className="gallery-title">
                             {fotos[indexFolder].nombre}
-                        </h1>
+                        </p>
 
                         <button
                             className="btn-back"
