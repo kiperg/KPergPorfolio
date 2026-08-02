@@ -80,6 +80,9 @@
   font-size: 15px;
   cursor: pointer;
   transition: 0.25s;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
 }
 
 .btn-back:hover {
@@ -287,4 +290,12 @@
   color: #1d1d1d;
   text-align: center;
   margin-top: 10px;
+  font-weight: 300;
+}
+
+.gallery-info {
+  color: #7d7d7d;
+  text-align: center;
+  margin-top: 10px;
+  font-weight: 300;
 }

@@ -10,6 +10,7 @@ const MainRenders = () => {
     const fotos = [
         {
             nombre: "CASA DP",
+            info:"REMODELACIÓN | INTERIORISMO | RENDERIZADO",
             imagenes: [
                 "https://res.cloudinary.com/drfdelucd/image/upload/v1785607211/KG-002_Render_Exterior_1_v0ysiv.png",
                 "https://res.cloudinary.com/drfdelucd/image/upload/v1785607210/KG-002_Render_Interior_3_sujm84.png",
@@ -19,6 +20,7 @@ const MainRenders = () => {
         },
         {
             nombre: "CASA GT",
+            info:"PROYECTO COMPLETO",
             imagenes: [
                 "https://res.cloudinary.com/drfdelucd/image/upload/v1785607373/GT_-_Interior_1_orgnq8.png",
                 "https://res.cloudinary.com/drfdelucd/image/upload/v1785607373/GT_-_Exterior_1_jcjtch.png",
@@ -26,6 +28,7 @@ const MainRenders = () => {
         },
         {
             nombre: "CASA LP",
+            info:"PROYECTO | INTERIORISMO | RENDERIZADO",
             imagenes: [
                 "https://res.cloudinary.com/drfdelucd/image/upload/v1785607409/LP_EXT_2_eikrqb.png",
                 "https://res.cloudinary.com/drfdelucd/image/upload/v1785607409/LP_INT_1_zqeokb.png",
@@ -33,8 +36,51 @@ const MainRenders = () => {
                 "https://res.cloudinary.com/drfdelucd/image/upload/v1785607411/LP_EXT_1_ebedji.png",
             ]
         },
+       
         {
+            nombre: "CASA PL",
+            info:"INTERIORISMO | RENDERIZADO",
+            imagenes: [
+                "https://res.cloudinary.com/drfdelucd/image/upload/v1785607516/KG_EXT_1_uvemjg.png",
+                "https://res.cloudinary.com/drfdelucd/image/upload/v1785607518/KG_INT_4_s8tvgn.png",
+                "https://res.cloudinary.com/drfdelucd/image/upload/v1785607518/KG_INT_3_tafifu.png",
+                "https://res.cloudinary.com/drfdelucd/image/upload/v1785607517/KG_INT_2_jh0iea.png",
+            ]
+        },
+       
+         {
+            nombre: "CASA LC",
+            info:"REMODELACIÓN | INTERIORISMO | RENDERIZADO",
+            imagenes: [
+                "https://res.cloudinary.com/drfdelucd/image/upload/v1785684957/LC_EXT_1_h2bkh3.png",
+                "https://res.cloudinary.com/drfdelucd/image/upload/v1785684957/LC_EXT_2_bbajcg.png",
+                "https://res.cloudinary.com/drfdelucd/image/upload/v1785684957/LC_INT_2_vo1nuh.png",
+                "https://res.cloudinary.com/drfdelucd/image/upload/v1785684956/LC_INT_1_xqt9ip.png",
+            ]
+        },
+        {
+            nombre: "PROYECTO OB",
+            info:"DISEÑO | RENDERIZADO",
+            imagenes: [
+                "https://res.cloudinary.com/drfdelucd/image/upload/v1785685009/OF_4_cc5yul.png  ",
+                "https://res.cloudinary.com/drfdelucd/image/upload/v1785685009/OF_3_vuzmeq.png",
+                "https://res.cloudinary.com/drfdelucd/image/upload/v1785685010/OF_1_riuti0.png",
+                "https://res.cloudinary.com/drfdelucd/image/upload/v1785685010/OF_2_h4e27l.png",
+            ]
+        },
+        {
+            nombre: "PROYECTO S/A",
+            info:"DISEÑO | INTERIORISMO | RENDERIZADO",
+            imagenes: [
+                "https://res.cloudinary.com/drfdelucd/image/upload/v1785685060/SENGUER_EXT_2_h5zkqg.png",
+                "https://res.cloudinary.com/drfdelucd/image/upload/v1785685061/SENGUER_EXT_1_melvco.png",
+                "https://res.cloudinary.com/drfdelucd/image/upload/v1785685061/ACONQUIJA_EXT_1_epuwkz.png",
+                "https://res.cloudinary.com/drfdelucd/image/upload/v1785685061/SENGUER_INT_1_nha8me.png",
+            ]
+        },
+         {
             nombre: "CASA OL",
+            info:"REMODELACIÓN",
             imagenes: [
                 "https://res.cloudinary.com/drfdelucd/image/upload/v1785607463/IMG_20210514_095605786_HDR_tlssub.jpg",
                 "https://res.cloudinary.com/drfdelucd/image/upload/v1785607460/IMG_20210514_094259992_HDR_uawy6u.jpg",
@@ -44,50 +90,16 @@ const MainRenders = () => {
                 "https://res.cloudinary.com/drfdelucd/image/upload/v1785607465/IMG_20210514_093737597_HDR_vciakg.jpg",
             ]
         },
-        {
-            nombre: "CASA PL",
+         {
+            nombre: "CAO",
+            info:"PRESENTACIÓN MUNICIPAL",
             imagenes: [
-                "https://res.cloudinary.com/drfdelucd/image/upload/v1785607516/KG_EXT_1_uvemjg.png",
-                "https://res.cloudinary.com/drfdelucd/image/upload/v1785607518/KG_INT_4_s8tvgn.png",
-                "https://res.cloudinary.com/drfdelucd/image/upload/v1785607518/KG_INT_3_tafifu.png",
-                "https://res.cloudinary.com/drfdelucd/image/upload/v1785607517/KG_INT_2_jh0iea.png",
+                "https://res.cloudinary.com/drfdelucd/image/upload/v1785709095/FACHADA_rpzfvs.png",
+                "https://res.cloudinary.com/drfdelucd/image/upload/v1785709095/PLANTA_pgznmx.png",
+                "https://res.cloudinary.com/drfdelucd/image/upload/v1785709095/CORTE_eec90s.png",
+                "https://res.cloudinary.com/drfdelucd/image/upload/v1785709095/PB_ijg7on.png"
             ]
         },
-        {
-            nombre: "CONFORME A OBRA",
-            imagenes: [
-                "https://res.cloudinary.com/drfdelucd/image/upload/v1785684854/FACHADA_qrvh5n.png",
-                "https://res.cloudinary.com/drfdelucd/image/upload/v1785684854/PLANTA_dg6orz.png",
-                "https://res.cloudinary.com/drfdelucd/image/upload/v1785684854/PB_roqtkr.png",
-                "https://res.cloudinary.com/drfdelucd/image/upload/v1785684854/CORTE_it7jfc.png"
-            ]
-        }, {
-            nombre: "CASA LC",
-            imagenes: [
-                "https://res.cloudinary.com/drfdelucd/image/upload/v1785684956/LC_INT_1_xqt9ip.png",
-                "https://res.cloudinary.com/drfdelucd/image/upload/v1785684957/LC_EXT_1_h2bkh3.png",
-                "https://res.cloudinary.com/drfdelucd/image/upload/v1785684957/LC_INT_2_vo1nuh.png",
-                "https://res.cloudinary.com/drfdelucd/image/upload/v1785684957/LC_EXT_2_bbajcg.png",
-            ]
-        },
-        {
-            nombre: "PROYECTO OB",
-            imagenes: [
-                "https://res.cloudinary.com/drfdelucd/image/upload/v1785685009/OF_4_cc5yul.png  ",
-                "https://res.cloudinary.com/drfdelucd/image/upload/v1785685009/OF_3_vuzmeq.png",
-                "https://res.cloudinary.com/drfdelucd/image/upload/v1785685010/OF_1_riuti0.png",
-                "https://res.cloudinary.com/drfdelucd/image/upload/v1785685010/OF_2_h4e27l.png",
-            ]
-        },
-        {
-            nombre: "SENGER",
-            imagenes: [
-                "https://res.cloudinary.com/drfdelucd/image/upload/v1785685060/SENGUER_EXT_2_h5zkqg.png",
-                "https://res.cloudinary.com/drfdelucd/image/upload/v1785685061/SENGUER_EXT_1_melvco.png",
-                "https://res.cloudinary.com/drfdelucd/image/upload/v1785685061/ACONQUIJA_EXT_1_epuwkz.png",
-                "https://res.cloudinary.com/drfdelucd/image/upload/v1785685061/SENGUER_INT_1_nha8me.png",
-            ]
-        }
     ];
 
     const nextImage = () => {
@@ -177,6 +189,12 @@ const MainRenders = () => {
                             {fotos[indexFolder].nombre}
                         </p>
 
+
+                        <p className="gallery-info">
+                            {fotos[indexFolder].info}
+                        </p>
+
+                        <br></br>
                         <button
                             className="btn-back"
                             onClick={() => setIndexFolder(null)}

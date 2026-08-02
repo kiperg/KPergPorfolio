@@ -29,7 +29,6 @@ Saludos.`;
                         src="https://res.cloudinary.com/drfdelucd/image/upload/v1785609862/LOGO_ycnxcy.png"
                         alt="Logo"
                     />
-                    <p>PORTFOLIO</p>
                 </div>
 
                 <article>
