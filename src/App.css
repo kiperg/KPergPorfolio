@@ -170,34 +170,76 @@
 
 .lightbox {
   position: fixed;
+  inset: 0;
   width: 100vw;
   height: 100vh;
-  top: 0;
-  left: 0;
+
   display: flex;
   justify-content: center;
   align-items: center;
+
   background: rgba(0, 0, 0, 0.9);
-  gap: 20px;
+
+  z-index: 9999;
 }
-.lightbox button {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  background: white;
-  backdrop-filter: blur(6px);
-  transition: 0.25s;
-  border: black 1px solid;
-}
-.lightbox button:hover {
-  background: rgba(255, 255, 255, 0.22);
-}
+
+/* IMAGEN */
 .lightbox img {
-  max-width: 90vw;
+  max-width: calc(100vw - 140px);
   max-height: 90vh;
+
+  width: auto;
+  height: auto;
+
   object-fit: contain;
   user-select: none;
   pointer-events: auto;
+}
+
+/* BOTONES */
+.lightbox button {
+  position: absolute;
+
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 60px;
+  height: 60px;
+
+  min-width: 60px;
+  min-height: 60px;
+
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  border: 1px solid black;
+
+  background: white;
+
+  font-size: 24px;
+  line-height: 1;
+
+  cursor: pointer;
+
+  transition: 0.25s;
+}
+
+.lightbox button:hover {
+  background: rgba(255, 255, 255, 0.22);
+}
+
+/* ANTERIOR */
+.lightbox .prev {
+  left: 20px;
+}
+
+/* SIGUIENTE */
+.lightbox .next {
+  right: 20px;
 }
 .textosComponent__info {
   display: flex;
@@ -229,7 +271,7 @@
   transform: scale(1.15);
 }
 
- /*============================= TARJETAS GALERIA ==============================*/
+/*============================= TARJETAS GALERIA ==============================*/
 .gallery-item {
   position: relative;
   overflow: hidden;
@@ -298,4 +340,84 @@
   text-align: center;
   margin-top: 10px;
   font-weight: 300;
+}
+
+@media (max-width: 600px) {
+  .lightbox img {
+    max-width: calc(100vw - 90px);
+    max-height: 80vh;
+  }
+
+  .lightbox button {
+    width: 45px;
+    height: 45px;
+    min-width: 45px;
+    min-height: 45px;
+    font-size: 18px;
+  }
+
+  .lightbox .prev {
+    left: 8px;
+  }
+
+  .lightbox .next {
+    right: 8px;
+  }
+
+  .gallery-item {
+    position: relative;
+  }
+
+  .gallery-overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: flex-end;
+    padding: 12px;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.75));
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .gallery-overlay div {
+    width: 100%;
+  }
+
+  .gallery-overlay h2 {
+    margin: 0;
+    text-align: left;
+    color: white;
+    font-size: 1rem;
+    font-weight: 300;
+  }
+
+  .gallery-overlay p {
+    display: none;
+  }
+.textosComponent__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .textosComponent__info article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20px;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .textosComponent__info article > div {
+    width: auto;
+    flex: 0 0 auto;
+  }
+
+  .textosComponent__info article > div a {
+    white-space: nowrap;
+  }
 }
