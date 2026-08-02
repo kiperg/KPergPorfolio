@@ -235,11 +235,13 @@
 /* ANTERIOR */
 .lightbox .prev {
   left: 20px;
+  border: none;
 }
 
 /* SIGUIENTE */
 .lightbox .next {
   right: 20px;
+  border: none;
 }
 .textosComponent__info {
   display: flex;
@@ -358,10 +360,12 @@
 
   .lightbox .prev {
     left: 8px;
+    border: none;
   }
 
   .lightbox .next {
     right: 8px;
+    border: none;
   }
 
   .gallery-item {
@@ -420,4 +424,17 @@
   .textosComponent__info article > div a {
     white-space: nowrap;
   }
+
+    .lightbox button {
+    background: white;
+    opacity: 1;
+  }
+
+  .lightbox button:hover,
+  .lightbox button:active,
+  .lightbox button:focus {
+    background: white;
+    opacity: 1;
+  }
+
 }
